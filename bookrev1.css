@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.header {
+    background-color: #99c4de;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.navbar ul li a:hover {
+    color: #99c4de;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(239, 189, 110, 0.744);
+    padding: 16px;
+    text-align: center;
+    background-color: #8fb6c9;
+    margin: 32px;
+    height: 300px;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    border-radius: 10px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.card-front {
+    background-color: #fff;
+    color: #333;
+    background-image: linear-gradient(to bottom, #fff, #f1f1f1);
+}
+
+.card-back {
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+    background-image: linear-gradient(to bottom, #fff, #f1f1f1);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 32px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-front img, .card-back img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+   margin-top:20px; 
+}
+
+.author {
+    text-align: center;
+    font-weight: bold;
+    background-color: #99c4de;
+    padding: 10px;
+    margin:20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(54, 49, 49, 0.356);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+p{
+    font-size: 18px;
+    margin:10px;
+}
+a{
+    color: #6eadd3;
+    text-decoration: none;
+    margin:20px;
+}
